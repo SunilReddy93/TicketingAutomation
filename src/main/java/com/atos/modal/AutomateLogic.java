@@ -49,14 +49,14 @@ public class AutomateLogic {
     }
 
     public void login(String username, String password){
-        driver.get("https://cas.itsm.worldline.com/login");
+        driver.get("#");
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.xpath("//*[@id=\"fm1\"]/div[3]/input[4]")).click();
 
 
             //ServiceDesk
-        driver.findElement(By.xpath("//div[starts-with(@id, 'txt') and contains(@title, 'https://servicedesk.itsm.worldline.com/cas.jsp?lang=en')]")).click();
+        driver.findElement(By.xpath("//div[starts-with(@id, 'txt') and contains(@title, '#')]")).click();
 
 
     }
